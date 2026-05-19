@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import fotoProfil from "../assets/img/profil1.jpeg";
+import fotoProfil from "../assets/img/profil2.jpeg";
 
 
 // ─── Inline SVG Icons (no lucide dependency) ─────────────────────────────────
