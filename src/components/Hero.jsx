@@ -1,7 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import fotoProfil from "../assets/img/profil2.jpeg";
-
+import fotoProfil from "/src/assets/img/profil2.jpeg";
 
 // ─── Inline SVG Icons (no lucide dependency) ─────────────────────────────────
 const IconGithub = ({ className }) => (
@@ -397,9 +396,12 @@ const Hero = () => {
                       }}
                     >
                       <img
-                        src="/src/assets/img/profil2.jpeg"
+                        src={fotoProfil}
                         alt="Irsyad Arrafi"
                         className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.target.src = "/profil2.jpeg";
+                        }}
                       />
                     </div>
 
